@@ -1,0 +1,124 @@
+@media (max-width: 1054px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 10px;
+        position: relative;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        /* Stack navbar items vertically */
+        align-items: center;
+    }
+
+    .navbar li {
+        flex-basis: auto;
+        /* Allow items to adjust based on content */
+        width: 100%;
+        /* Full width for each item */
+        /* text-align: center; Center text */
+        font-size: 16px;
+    }
+
+    .btn {
+        width: auto;
+        /* Allow buttons to adjust width */
+        margin: 5px;
+        /* Reduce margin for better spacing */
+    }
+
+    .contain {
+        position: absolute;
+        bottom: 0;
+        margin: 0 18px;
+        width: 86%;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 100%;
+        /* Ensure body fits within viewport */
+        height: 100vh;
+        /* Allow height to adjust based on content */
+    }
+
+    .container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center elements */
+
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+
+    .right {
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width : 400px) {
+    .contain:has(input:focus) {
+        background-color: white;
+        color: black;
+        bottom: -18px;
+    }
+
+    .contain button {
+        margin: 5px auto
+    }
+
+    .contain:has(input:focus) .form-group input {
+        margin-block: 1px;
+    }
+
+    .contain:has(input:focus) button{
+        margin-block: 1px;
+    }
+
+    .left img {
+        width: 70px;
+    }
+
+    /* .contain input {
+        text-align: left;
+        padding: 0;
+    } */
+
+    .contain h1 {
+        font-size: 20px;
+    }
+
+    .contain {
+        height: auto;
+        padding: 0;
+    }
+
+    input::placeholder {
+        font-size: small;
+    }
+
+    .left div {
+        line-height: 10px;
+        font-size: 20px;
+    }
+
+    .form-group input {
+        margin: 5px 30px;
+    }
+
+}

@@ -1,0 +1,140 @@
+/* CSS Reset    */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Baloo Bhai 2', cursive;
+  color: white;
+  background-image: url('/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.left {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+} 
+  
+.left img {
+  margin: auto;
+  width: 85px;
+  display: block;
+}
+  
+.left div {
+  line-height: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+  
+.mid {
+  text-align: center;
+  position: relative;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  width: auto;
+}
+ 
+.right {
+  display: flex;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: rgb(187, 236, 189);
+  text-decoration: underline;
+}
+
+.btn {
+  font-family: 'Smokum', cursive;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  width: 119px;
+}
+
+.btn:hover {
+  background-color: #daece3;
+  color: rgb(234, 80, 9);
+}
+
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.contain {
+  border: 2px solid rgb(162, 153, 153);
+  width: 60vh;
+  margin: 100px 0px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  z-index: 2;
+}
+  
+.form-group input {
+  font-family: 'Baloo Bhai 2', cursive;
+  border: 3px solid rgb(228, 138, 138);
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 2px 30px;
+  margin: 3px 40px;
+  font-size: 20px;
+} 
+  
+.contain button {
+  border: 3px solid rgb(70, 84, 70);
+  display: block;
+  width: 74%;
+  margin: 15px auto;
+} 
+  
+.form-group {
+  display: flex;
+}
+       
+         
